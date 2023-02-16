@@ -1,4 +1,4 @@
-![Ссылка на изображение](https://logo%20%E2%80%94%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.svg)
+![Ссылка на изображение](https://user-images.githubusercontent.com/81571422/219500560-99cc418a-fc3d-4b1d-85ef-a4053b03d1ae.svg)
 
 ## Курсовой проект "Художественная галерея "Blanchar".
 
@@ -17,3 +17,4 @@
 - Яндекс-API (карта)
 - Плагин Input Mask
 - Плагин Just-validate
+![logo]()
