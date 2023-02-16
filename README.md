@@ -10,7 +10,7 @@ ___
 
 - HTML
 - CSS
-- Чистый JavaScript
+- JavaScript
 - Gulp
 - Swiper JS
 - JQuery accordion
