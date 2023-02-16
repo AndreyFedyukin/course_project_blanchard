@@ -2,7 +2,7 @@
 
 ## Course_project_Blanchard
 
-### Ссылка на сайт
+### Ссылка на сайт https://andreyfedyukin.github.io/Course_project_Blanchard/
 
 **_Стек:_**
 
