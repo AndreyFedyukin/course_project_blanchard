@@ -1,0 +1,229 @@
+.catalog {
+  padding-top: 80px;
+  padding-bottom: 41px;
+}
+
+.catalog__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 17px;
+}
+
+.catalog__title {
+  margin-right: 41px;
+}
+
+.catalog__country-list {
+  display: flex;
+  padding-top: 8px;
+}
+
+.catalog__country-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.catalog__tab-btn {
+  background: center / cover no-repeat transparent;
+  border: none;
+  border-radius: 50%;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  transition: filter 0.2s ease;
+}
+
+.catalog__tab-btn-1 {
+  background-image: url(../img/4-catalog/France.svg);
+}
+
+.catalog__tab-btn-2 {
+  background-image: url(../img/4-catalog/German.svg);
+}
+
+.catalog__tab-btn-3 {
+  background-image: url(../img/4-catalog/Italy.svg);
+}
+
+.catalog__tab-btn-4 {
+  background-image: url(../img/4-catalog/Russia.svg);
+}
+
+.catalog__tab-btn-5 {
+  background-image: url(../img/4-catalog/Belgium.svg);
+}
+
+.catalog__tab-btn:active {
+  border: 2px solid var(--purple);
+  border-radius: 50%;
+}
+
+.catalog__tab-btn:hover {
+  filter: drop-shadow(0px 0px 20px rgba(157, 92, 208, 0.7));
+}
+
+.catalog__tab-btn_active {
+  box-shadow: 0 0 0 8px #ffffff, 0 0 0 10px #9d5cd0;
+  border-radius: 50%;
+}
+
+.catalog__tab-btn:focus {
+  box-shadow: 0 0 0 6px #ffffff, 0 0 0 8px #9d5cd0;
+}
+
+.catalog__text {
+  margin-bottom: 39px;
+  width: 1080px;
+}
+
+.catalog__content {
+  display: none;
+}
+
+.catalog__content_active {
+  display: flex;
+  justify-content: space-between;
+  animation: tab 1s ease-in-out;
+}
+
+@keyframes tab {
+  0% {
+    transform: translate(-2%, -2%);
+    opacity: 0;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.catalog__left-france,
+.catalog__left-german,
+.catalog__left-italy,
+.catalog__left-russia,
+.catalog__left-belgium {
+  display: none;
+  width: 46.875%;
+}
+
+.catalog__left-active {
+  display: block;
+  animation: tab 1s ease-in-out;
+}
+
+.catalog__img {
+  margin-bottom: 27px;
+}
+
+.catalog__person-name {
+  display: block;
+  margin-bottom: 9px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.catalog__pesron-life {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.catalog__right {
+  width: 50%;
+}
+
+.catalog__accord-item {
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid #cacaca;
+  margin-top: -1px;
+}
+
+.catalog__accord-item:first-child {
+  border-top: 1px solid #cacaca;
+}
+
+.catalog__accord-item:hover {
+  border-top-color: var(--purple);
+  border-bottom-color: var(--purple);
+}
+
+.catalog__accord-btn {
+  position: relative;
+  width: 100%;
+  padding: 40px 70px 41px 0;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  background-color: transparent;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+.catalog__accord-btn::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  right: 0;
+  background: url(../img/4-catalog/accordion.svg) 100% center/50px no-repeat;
+  transform: translateY(-50%);
+}
+
+.catalog__accord-item:hover .catalog__accord-btn::after {
+  background-image: url(../img/4-catalog/accordion-hover.svg);
+}
+
+.catalog__accord-item:active .catalog__accord-btn::after {
+  background-image: url(../img/4-catalog/accordion-active-1.svg);
+}
+
+.ui-accordion-header-active.catalog__accord-btn::after {
+  background-image: url(../img/4-catalog/accordion-active-1.svg);
+  transform: translateY(-50%) rotate(180deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+.catalog__accord-item:hover
+  .ui-accordion-header-active.catalog__accord-btn::after {
+  background-image: url(../img/4-catalog/accordion-active-1.svg);
+}
+
+.catalog__accord-btn:focus {
+  outline: 2px solid var(--dark-purple);
+}
+
+.accord__list {
+  border-top: 1px solid var(--purple);
+  padding-top: 25px;
+  padding-bottom: 28px;
+  overflow: auto;
+  overflow-x: hidden;
+  height: auto;
+  column-count: 3;
+}
+
+.accord__btn {
+  background-color: transparent;
+  border: none;
+}
+
+.accord__btn-active {
+  color: var(--purple);
+}
+
+.accord__btn:focus {
+  outline: none;
+}
+
+.accord__btn:hover {
+  color: var(--purple);
+  text-decoration: underline;
+}
+
+.accord__btn:active {
+  color: var(--dark-purple);
+  text-decoration: none;
+}

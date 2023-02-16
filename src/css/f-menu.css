@@ -1,0 +1,234 @@
+.menu {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: relative;
+  z-index: 3;
+}
+
+.menu__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 21px;
+}
+
+.menu__list {
+  display: flex;
+}
+
+.menu__item {
+  position: relative;
+}
+
+.menu__item:not(:last-child) {
+  margin-right: calc(10px + (95 - 10) * ((100vw - 1024px) / (1920 - 1024)));
+}
+
+.menu__btn {
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--white);
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.menu__btn_active {
+  color: var(--purple);
+}
+
+.menu__btn::after {
+  content: "";
+  display: inline-block;
+  margin-left: 5px;
+  width: 12px;
+  height: 12px;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='11' viewBox='0 0 12 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 5L6 10L0.999998 5' stroke='white'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  transition: transform 0.2s ease, background-image 0.2s ease;
+}
+
+.menu__btn:hover {
+  color: var(--purple);
+}
+
+.menu__btn:hover.menu__btn::after {
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='11' viewBox='0 0 12 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 5L6 10L0.999998 5' stroke='%239D5CD0'/%3E%3C/svg%3E%0A");
+}
+
+.menu__btn:focus {
+  color: var(--purple);
+  outline: 2px solid var(--dark-purple);
+}
+
+.menu__btn:focus.menu__btn::after {
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='11' viewBox='0 0 12 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 5L6 10L0.999998 5' stroke='%239D5CD0'/%3E%3C/svg%3E%0A");
+}
+
+.menu__btn:active {
+  color: var(--dark-purple);
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.menu__dropdown {
+  position: absolute;
+  top: 28px;
+  display: none;
+  min-width: 300px;
+  max-height: 300px;
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow: auto;
+}
+
+.menu__dropdown-active {
+  display: block;
+  animation: opacity 0.2s;
+}
+
+.menu__dropdown-item {
+  position: relative;
+  padding: 10px 124px 11px 14px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.menu__dropdown-item-1 {
+  background-image: url(../img/1-header/tintoretto.svg);
+}
+
+.menu__dropdown-item-2 {
+  background-image: url(../img/1-header/friedrich.svg);
+}
+
+.menu__dropdown-item-3 {
+  background-image: url(../img/1-header/leonardo.svg);
+}
+
+.menu__dropdown-item-4 {
+  background-image: url(../img/1-header/verrocchio.svg);
+}
+
+.menu__dropdown-item-5 {
+  background-image: url(../img/1-header/verrocchio.svg);
+}
+
+.menu__dropdown-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.simplebar-track.simplebar-vertical {
+  background-color: var(--purple);
+  width: 2px;
+  height: 220px;
+  visibility: visible;
+  margin: auto 0;
+  transform: translateX(-19px);
+}
+
+.simplebar-track.simplebar-vertical .simplebar-scrollbar:before {
+  opacity: 1;
+  width: 2px;
+  height: 192px;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.simplebar-content-wrapper {
+  overflow: auto;
+}
+
+.menu__dropdown-link {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--white);
+  width: 100%;
+  word-wrap: break-word;
+}
+
+.menu__dropdown-link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.menu__dropdown-link:focus {
+  outline: 2px solid var(--dark-purple);
+}
+
+.menu__form {
+  display: flex;
+  width: 15.625%;
+}
+
+.menu__label {
+  width: 88%;
+} 
+
+.menu__form:hover .menu__search {
+  border-color: var(--light-purple);
+}
+
+.menu__form:hover .menu__search-btn {
+  background-image: url("data:image/svg+xml,%3Csvg width='23' height='22' viewBox='0 0 23 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='6.8678' height='1.71695' transform='matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)' fill='%23C283F3'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z' fill='%23C283F3'/%3E%3C/svg%3E%0A");
+}
+
+.menu__search {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  line-height: 21px;
+  height: 100%;
+  color: var(--light-purple);
+  border-bottom: 1px solid var(--white);
+  transition: border-color 0.2s ease;
+}
+
+.menu__search::placeholder {
+  color: var(--white);
+}
+
+.menu__search:hover {
+  border-color: var(--light-purple);
+}
+
+.menu__search:focus {
+  outline: 2px solid var(--dark-purple);
+}
+
+.menu__search-btn {
+  display: block;
+  width: 23px;
+  height: 23px;
+  margin-right: 9px;
+  background-image: url("data:image/svg+xml,%3Csvg width='23' height='22' viewBox='0 0 23 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='6.8678' height='1.71695' transform='matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)' fill='white'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z' fill='white'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transform: translateY(5px);
+  transition: background-image 0.2s ease;
+}
+
+.menu__search-btn:focus {
+  outline: 2px solid var(--dark-purple);
+}

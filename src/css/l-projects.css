@@ -1,0 +1,130 @@
+.projects {
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.projects__title {
+  margin-bottom: 16px;
+}
+
+.projects__text {
+  margin-bottom: 21px;
+  width: 1080px;
+}
+
+.projects__tooltip-icon {
+  display: inline-block;
+  position: relative;
+  width: 16px;
+  height: 16px;
+  background: url(../img/7-projects/tooltip-icon.svg) center / cover no-repeat;
+  transform: translateY(3px);
+  cursor: pointer;
+}
+
+.projects__tooltip-icon:focus {
+  outline: 2px solid var(--dark-purple);
+}
+
+.projects__link {
+  color: var(--purple);
+  font-weight: 600;
+}
+
+.projects__link:hover {
+  text-decoration: underline;
+}
+
+.projects__link:focus {
+  outline: 2px solid var(--dark-purple);
+}
+
+.projects__link:focus {
+  color: var(--dark-purple);
+  text-decoration: underline;
+}
+
+.projects__tooltip {
+  display: inline-block;
+  position: absolute;
+  opacity: 0;
+  width: max-content;
+  background: url(../img/7-projects/tooltip-bi.svg) center / cover no-repeat;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: var(--white);
+  transition: opacity 0.2s ease;
+  transform: translate(-47%, -105%);
+}
+
+.projects__tooltip-1,
+.projects__tooltip-2 {
+  max-width: 264px;
+}
+
+.projects__tooltip-1 {
+  padding: 8px 11px 22px;
+}
+
+.projects__tooltip-2,
+.projects__tooltip-3 {
+  padding: 7px 11px 19px;
+}
+
+.projects__tooltip-3 {
+  max-width: 232px;
+}
+
+.projects__tooltip-icon-1:hover .projects__tooltip-1 {
+  opacity: 1;
+}
+
+.projects__tooltip-icon-2:hover .projects__tooltip-2 {
+  opacity: 1;
+}
+
+.projects__tooltip-icon-3:hover .projects__tooltip-3 {
+  opacity: 1;
+}
+
+.projects__title-partners {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #333;
+  margin-bottom: 23px;
+}
+
+.projects__swiper-container {
+  padding: 0 calc(53px + (75 - 53) * ((100vw - 1340px) / (1920 - 1340)));
+}
+
+.projects__img img:hover {
+  outline: 1px solid #885bc7;
+  outline-offset: -1px;
+}
+
+.projects__img:hover img {
+  filter: grayscale(0);
+}
+
+.projects__img img {
+  filter: grayscale(1);
+}
+
+.projects__swiper-btn-prev,
+.projects__swiper-btn-next {
+  position: absolute;
+}
+
+.projects__swiper-btn-prev {
+  background-image: url(../img/7-projects/projects__swiper.svg);
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.projects__swiper-btn-next {
+  background-image: url(../img/7-projects/projects__swiper.svg);
+  transform: translateY(-50%);
+}
