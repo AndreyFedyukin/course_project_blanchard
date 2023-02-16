@@ -17,4 +17,3 @@
 - Яндекс-API (карта)
 - Плагин Input Mask
 - Плагин Just-validate
-![logo]()
