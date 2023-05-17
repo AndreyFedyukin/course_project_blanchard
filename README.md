@@ -2,7 +2,7 @@
 
 ## Курсовой проект "Художественная галерея "Blanchar".
 
-##### Ссылка на сайт https://andreyfedyukin.github.io/Course-project-Blanchard/
+##### Ссылка на сайт https://andreyfedyukin.github.io/Course_project_Blanchard/
 
 ___
 
