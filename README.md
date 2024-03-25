@@ -1,4 +1,4 @@
-![Ссылка на изображение](https://andreyfedyukin.github.io/Course_project_Blanchard/img/1-header/logo.svg)
+![Ссылка на изображение](https://andreyfedyukin.github.io/course_project_blanchard/img/1-header/logo.svg)
 
 ## Курсовой проект "Художественная галерея "Blanchar".
 
